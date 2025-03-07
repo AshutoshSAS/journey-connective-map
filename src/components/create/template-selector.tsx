@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Route, Buildings, Mountain } from 'lucide-react';
+import { Route, Building, Mountain } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 type TemplateSelectorProps = {
@@ -21,7 +21,7 @@ export function TemplateSelector({ selectedTemplate, onSelectTemplate }: Templat
       id: 'city-explorer',
       name: 'City Explorer',
       description: 'Dynamic urban style with quick cuts and overlays',
-      icon: <Buildings size={20} />,
+      icon: <Building size={20} />,
     },
     {
       id: 'nature-escape',

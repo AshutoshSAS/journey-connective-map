@@ -15,7 +15,7 @@ import {
   PauseCircle,
   Clock,
   Route,
-  Buildings,
+  Building,
   Mountain,
   SlidersHorizontal
 } from 'lucide-react';

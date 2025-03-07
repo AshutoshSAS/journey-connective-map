@@ -3,6 +3,7 @@ import React from 'react';
 import { Navbar } from '@/components/navigation/navbar';
 import { ProfileHeader } from '@/components/profile/profile-header';
 import { StoryCard } from '@/components/stories/story-card';
+import { BottomNav } from '@/components/navigation/bottom-nav';
 
 const Profile = () => {
   // Mock user data
@@ -67,7 +68,7 @@ const Profile = () => {
       <main>
         <ProfileHeader user={user} />
         
-        <div className="max-w-7xl mx-auto px-4 py-10">
+        <div className="max-w-7xl mx-auto px-4 py-10 pb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {stories.map((story) => (
               <StoryCard key={story.id} {...story} />
@@ -75,6 +76,7 @@ const Profile = () => {
           </div>
         </div>
       </main>
+      <BottomNav />
     </div>
   );
 };

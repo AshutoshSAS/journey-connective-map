@@ -4,6 +4,7 @@ import { Navbar } from '@/components/navigation/navbar';
 import { Hero } from '@/components/landing/hero';
 import { Features } from '@/components/landing/features';
 import { CallToAction } from '@/components/landing/cta';
+import { BottomNav } from '@/components/navigation/bottom-nav';
 
 const Index = () => {
   return (
@@ -14,7 +15,7 @@ const Index = () => {
         <Features />
         <CallToAction />
       </main>
-      <footer className="py-10 border-t">
+      <footer className="py-10 border-t mb-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
@@ -59,6 +60,7 @@ const Index = () => {
           </div>
         </div>
       </footer>
+      <BottomNav />
     </div>
   );
 };
